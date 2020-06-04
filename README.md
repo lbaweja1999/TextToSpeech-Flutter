@@ -1,4 +1,4 @@
-# texttospeech and speechtotext
+# TextToSpeech and SpeechToText
 
 A new Flutter application.
 
