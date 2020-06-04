@@ -19,23 +19,23 @@ samples, guidance on mobile development, and a full API reference.
 Applications using this plugin require user permissions.
 
 # iOS
-'''
+```
 Add the following keys to your Info.plist file, located in <project root>/ios/Runner/Info.plist:
 
 NSSpeechRecognitionUsageDescription - describe why your app uses speech recognition. This is called Privacy - Speech Recognition Usage Description in the visual editor.
 NSMicrophoneUsageDescription - describe why your app needs access to the microphone. This is called Privacy - Microphone Usage Description in the visual editor.
-'''
+```
 
 # Android 
-'''
+```
 Add the record audio permission to your AndroidManifest.xml file, located in <project root>/android/app/src/main/AndroidManifest.xml.
 
 android.permission.RECORD_AUDIO - this permission is required for microphone access.
 android.permission.INTERNET - this permission is required because speech recognition may use remote services.
-'''
+```
 
 # Adding Sounds for iOS (optional)
-'''
+```
 Android automatically plays system sounds when speech listening starts or stops but iOS does not. This plugin supports playing sounds to indicate listening status on iOS if sound files are available as assets in the application. To enable sounds in an application using this plugin add the sound files to the project and reference them in the assets section of the application pubspec.yaml. The location and filenames of the sound files must exactly match what is shown below or they will not be found. The example application for the plugin shows the usage.
 
   assets:
@@ -45,4 +45,4 @@ Android automatically plays system sounds when speech listening starts or stops 
 speech_to_text_listening.m4r - played when the listen method is called.
 speech_to_text_cancel.m4r - played when the cancel method is called.
 speech_to_text_stop.m4r - played when the stop method is called.
-'''
+```
