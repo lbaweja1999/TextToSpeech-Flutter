@@ -30,9 +30,9 @@ NSMicrophoneUsageDescription - describe why your app needs access to the microph
 ```
 Add the record audio permission to your AndroidManifest.xml file, located in <project root>/android/app/src/main/AndroidManifest.xml.
 
-android.permission.RECORD_AUDIO - this permission is required for microphone access.
-android.permission.INTERNET - this permission is required because speech recognition may use remote services.
-change the minSdkVersion to 21 in the build.gradle file
+* android.permission.RECORD_AUDIO - this permission is required for microphone access.
+* android.permission.INTERNET - this permission is required because speech recognition may use remote services.
+* change the minSdkVersion to 21 in the build.gradle file
 ```
 
 # Adding Sounds for iOS (optional)
@@ -43,7 +43,7 @@ Android automatically plays system sounds when speech listening starts or stops 
   - assets/sounds/speech_to_text_listening.m4r
   - assets/sounds/speech_to_text_cancel.m4r
   - assets/sounds/speech_to_text_stop.m4r
-speech_to_text_listening.m4r - played when the listen method is called.
-speech_to_text_cancel.m4r - played when the cancel method is called.
-speech_to_text_stop.m4r - played when the stop method is called.
+* speech_to_text_listening.m4r - played when the listen method is called.
+* speech_to_text_cancel.m4r - played when the cancel method is called.
+* speech_to_text_stop.m4r - played when the stop method is called.
 ```
