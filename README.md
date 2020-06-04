@@ -32,6 +32,7 @@ Add the record audio permission to your AndroidManifest.xml file, located in <pr
 
 android.permission.RECORD_AUDIO - this permission is required for microphone access.
 android.permission.INTERNET - this permission is required because speech recognition may use remote services.
+change the minSdkVersion to 21 in the build.gradle file
 ```
 
 # Adding Sounds for iOS (optional)
