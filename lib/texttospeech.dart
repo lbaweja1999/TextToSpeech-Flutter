@@ -54,7 +54,7 @@ class _SpeechDemoState extends State<SpeechDemo> {
 
   void resultListener(SpeechRecognitionResult result) {
     setState(() {
-      msg = "${result.recognizedWords} - ${result.finalResult}";
+      msg = "${result.recognizedWords}";
       print("Result is $msg");
     });
   }
@@ -73,10 +73,18 @@ class _SpeechDemoState extends State<SpeechDemo> {
           alignment: Alignment.center,
           child: RaisedButton(
             onPressed: () {
-              //speakNow();
               textSpeak();
             },
             child: Text('Speak Now'),
+          ),
+        ),
+        Container(
+          alignment: Alignment.center,
+          child: RaisedButton(
+            onPressed: () {
+              speakNow();
+            },
+            child: Text('Record'),
           ),
         ),
         Container(child: Text(msg))
